@@ -1,12 +1,15 @@
 package com.example.javalambda;
 
-@SuppressWarnings({"unused", "WeakerAccess"})
-public class Request {
+/**
+ * Represents the event.json. Jackson will create an instance of this class and pass it to {@link HelloWorld::handleRequest} as the first parameter.
+ */
+@SuppressWarnings({"unused"})
+class Request {
 
     private String name;
     private Address address;
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
@@ -14,27 +17,33 @@ public class Request {
         this.name = name;
     }
 
-    public Address getAddress() {
+    Address getAddress() {
         return address;
     }
 
-    public void setAddress(Address address) {
+    void setAddress(Address address) {
         this.address = address;
     }
 
-    public class Address {
+    /**
+     * Inner class that demonstrates hierarchical json fields
+     */
+    class Address {
 
-        String country;
+        private String country;
 
+        /**
+         * Explicit default constructor needed for Jackson to properly parse the input json into {@link Request} with inner class.
+         */
         public Address() {
 
         }
 
-        public String getCountry() {
+        String getCountry() {
             return country;
         }
 
-        public void setCountry(String country) {
+        void setCountry(String country) {
             this.country = country;
         }
 

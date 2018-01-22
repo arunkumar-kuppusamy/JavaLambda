@@ -5,6 +5,9 @@ import com.amazonaws.services.lambda.runtime.RequestHandler;
 
 public class HelloWorld implements RequestHandler<Request, String> {
 
+    /**
+     * @param request Any class the event json can serialize into. In this case {@link com.example.javalambda.Request}
+     */
     @Override
     public String handleRequest(Request request, Context context) {
 

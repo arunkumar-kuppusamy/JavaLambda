@@ -4,9 +4,10 @@ Description: My first java lambda.
 
 Resources:
 
-  HelloWorldLambda:
+  HelloWorldLambda: ## This is what you refer to when executing "sam local invoke "HelloWorldLambda" -e event.json"
     Type: AWS::Serverless::Function
     Properties:
+      ## FunctionName is only relevant for deployment.
       FunctionName: HelloWorldFunction
       Timeout: 30
       Handler: com.example.javalambda.HelloWorld::handleRequest
