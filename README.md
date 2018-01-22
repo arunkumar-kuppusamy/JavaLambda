@@ -1,4 +1,4 @@
-# AWS Lambda in Java
+# AWS Lambda - Java8
 Proper first time setup of a local development environment for AWS Lambda functions written in Java can be time consuming. This is a small sample project with all the settings needed.
 
 Please let me in issues if it does work smoothly for you. 
