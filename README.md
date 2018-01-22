@@ -16,7 +16,7 @@ First run the command bellow will take some time. The docker image for SAM Local
 npm install -g aws-sam-local
 ```
 
-##Sample output
+## Sample local execution output
 ```
 $ ./gradlew jar && sam local invoke "HelloWorldLambda" -e event.json
 Cleaned up directory '/Users/<user>/Documents/JavaLambda/build/classes/main'
@@ -48,7 +48,7 @@ END RequestId: ae513807-82f4-47eb-bcdf-362146dc85bd
 REPORT RequestId: ae513807-82f4-47eb-bcdf-362146dc85bd	Duration: 19.39 ms	Billed Duration: 100 ms	Memory Size: 0 MB	Max Memory Used: 9 MB
 ```
 
-##Pro tip
+## Pro tip
 Make sure you set following environment variables to speed-up each local function run.
 ```
 export AWS_ACCESS_KEY_ID=<access key id>
