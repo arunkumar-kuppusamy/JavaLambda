@@ -1,5 +1,7 @@
 # AWS Lambda in Java
-A sample implementation of AWS Lambda written in Java with local testing support using [AWS SAM local](https://github.com/awslabs/aws-sam-local).
+Proper first time setup of a local development environment for AWS Lambda functions written in Java can be time consuming. This is a small sample project with all the settings needed.
+
+Uses [AWS SAM Local](https://github.com/awslabs/aws-sam-local).
 
 ## Test your AWS Lambda functions locally
 First run the command bellow will take some time. The docker image for SAM Local with download once (~350MB).
